@@ -80,12 +80,29 @@
     }
 
     .sub-box {
-      border: 1px solid #999;
-      padding: 15px;
-      margin-bottom: 15px;
-      border-radius: 8px;
-      background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border: 1px solid #999;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #ffffff;
     }
+    .degree-info {
+    flex: 2;
+    }
+    .key-classes {
+    flex: 1;
+    }
+      .key-classes h6 {
+      font-size: 18px;
+      margin-bottom: 5px;
+      }
+      .key-classes ul {
+      padding-left: 20px;
+      margin: 0;
+      }
   </style>
 </head>
 
@@ -97,25 +114,56 @@
   </header>
 
   <section class="section-box">
-    <h2>Education</h2>
-    <div class="sub-box">
-      <div class="PR">
-        <h5>Public Relations, Small Group Communication</h5>
-      <p>Bachelor of Arts - Missouri Southern State University (2015-2019)</p>
-    </div>
-  </div>
-  <div class="sub-box">
-    <div class="Mass Comm">
-      <h5>Mass Communications, Public Speaking</h5>
-      <p>Bachelor of Arts - Missouri Southern State University (2015-2019)</p>
-    </div>
-    </div>
-    <div class="sub-box">
-    <div class="Spanish">
-      <h5>Spanish, History & Language</h5>
-      <p>Bachelor of Arts - Missouri Southern State University (2015-2019)</p>
-    </div>
-    </div>
+    <section class="section-box">
+      <h2>Education</h2>
+    
+      <div class="sub-box">
+        <div class="degree-info">
+          <h5>Public Relations, Small Group Communication</h5>
+          <p>Bachelor of Arts - Missouri Southern State University (2015-2019)</p>
+        </div>
+        <div class="key-classes">
+          <h6>Key Classes</h6>
+          <ul>
+            <li>Interpersonal Communication</li>
+            <li>Organizational Communication</li>
+            <li>Small Group Communication</li>
+            <li>Case Studies in Public Relations</li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="sub-box">
+        <div class="degree-info">
+          <h5>Mass Communications, Public Speaking</h5>
+          <p>Bachelor of Arts - Missouri Southern State University (2015-2019)</p>
+        </div>
+        <div class="key-classes">
+          <h6>Key Classes</h6>
+          <ul>
+            <li>Advanced Public Speaking</li>
+            <li>Crisis Communication</li>
+            <li>Nonverbal Communication</li>
+            <li>Mass Communications Theory</li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="sub-box">
+        <div class="degree-info">
+          <h5>Spanish, History & Language</h5>
+          <p>Bachelor of Arts - Missouri Southern State University (2015-2019)</p>
+        </div>
+        <div class="key-classes">
+          <h6>Key Classes</h6>
+          <ul>
+            <li>Spanish Literature</li>
+            <li>Latin American Culture</li>
+            <li>Spanish Phonetics</li>
+          </ul>
+        </div>
+      </div>
+    
   </section>
 
   <div class="container">
