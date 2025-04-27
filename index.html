@@ -13,113 +13,115 @@
       margin: 0;
       padding: 50px;
     }
-  
+
     header {
       text-align: center;
       padding: 20px;
     }
-  
+
     h1 {
       font-size: 48px;
       color: #232d31;
       margin-bottom: 5px;
     }
-  
+
     h2 {
       color: #050606;
       font-size: 30px;
       margin-bottom: 10px;
       margin-top: 0;
     }
-  
+
     h3 {
       color: #232d31;
       font-size: 28px;
       margin-top: 0;
       margin-bottom: 5px;
     }
-  
+
     h4 {
       color: #28556c;
       font-size: 22px;
       margin-top: 0;
       margin-bottom: 5px;
     }
-  
+
     h5 {
       font-size: 20px;
       margin-top: 0;
       margin-bottom: 5px;
     }
-  
+
     p {
       font-size: 18px;
       margin-top: 0;
     }
-  
+
     ul {
       padding-left: 20px;
     }
-  
+
     .container {
       display: flex;
       gap: 30px;
       margin: 60px 0;
     }
-  
-    .section-box:hover, .sub-box:hover {
-  transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-    .section-box, .sub-box {
+    .section-box:hover,
+    .sub-box:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .section-box,
+    .sub-box {
       opacity: 0;
       transform: translateY(20px);
       animation: fadeSlideIn 1.2s ease-out forwards;
     }
-  
+
     .section-box:nth-child(1) {
       animation-delay: 0.3s;
     }
-  
+
     .section-box:nth-child(2) {
       animation-delay: 0.6s;
     }
-  
+
     .section-box:nth-child(3) {
       animation-delay: 0.9s;
     }
-  
+
     .sub-box:nth-child(1) {
       animation-delay: 1.2s;
     }
-  
+
     .sub-box:nth-child(2) {
       animation-delay: 1.5s;
     }
-  
+
     .sub-box:nth-child(3) {
       animation-delay: 1.8s;
     }
-  
+
     @keyframes fadeSlideIn {
       to {
         opacity: 1;
         transform: translateY(0);
       }
     }
-  
+
     .main-content {
       flex: 2;
     }
-  
+
     .sidebar {
       flex: 1;
       position: sticky;
       top: 20px;
     }
-  
+
     .section-box {
       border: 2px solid #333;
       padding: 20px;
@@ -127,7 +129,7 @@
       border-radius: 10px;
       background-color: #f9f9f9;
     }
-  
+
     .sub-box {
       border: 1px solid #999;
       padding: 15px;
@@ -135,16 +137,16 @@
       border-radius: 8px;
       background-color: #ffffff;
     }
-  
+
     .sub-box p:last-child {
       margin-bottom: 0;
     }
-  
+
     .education-container {
       width: 75%;
       margin: 0 auto;
     }
-  
+
     .education-sub-box {
       display: flex;
       flex-wrap: nowrap;
@@ -152,7 +154,13 @@
       margin-bottom: 20px;
       align-items: stretch;
     }
-  
+
+    .degree-box:hover, .classes-box:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
     .degree-box {
       flex: 3;
       border: 1px solid #999;
@@ -164,11 +172,11 @@
       justify-content: center;
       align-items: center;
     }
-  
+
     .degree-box p {
       margin-bottom: 0;
     }
-  
+
     .classes-box {
       flex: 1;
       border: 1px solid #999;
@@ -176,40 +184,40 @@
       padding: 15px;
       background-color: #ffffff;
     }
-  
+
     .classes-box h6 {
       font-size: 18px;
       margin-bottom: 10px;
       margin-top: 2px;
     }
-  
+
     .classes-box ul {
       padding-left: 20px;
       margin: 0;
     }
-  
+
     .award-date {
       display: block;
       font-size: 14px;
       color: #666;
     }
-  
+
     .award-title {
       display: block;
       font-size: 15px;
     }
-  
+
     .involvement-date {
       display: block;
       font-size: 14px;
       color: #666;
     }
-  
+
     .involvement-title {
       display: block;
       font-size: 15px;
     }
-  
+
     .skills-box ul {
       margin: 0;
       display: flex;
@@ -218,7 +226,7 @@
       list-style-type: none;
       padding-left: 0;
     }
-  
+
     .languages-box ul {
       margin: 0;
       display: flex;
@@ -227,7 +235,7 @@
       list-style-type: none;
       padding-left: 0;
     }
-  
+
     .references-box ul {
       margin: 0;
       display: flex;
